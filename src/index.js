@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Home from "./pages/Home";
 
-const Home = () =>{
-
-    return (
-        <div>
-           home
-        </div>
-    )
-}
-
-export default Home;
+ReactDOM.render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
