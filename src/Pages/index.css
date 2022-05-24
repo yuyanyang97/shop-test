@@ -1,0 +1,21 @@
+.app {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+
+.menu{
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    
+} 
+
+.item{
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 10px 17px;
+    padding: 20px;
+}
