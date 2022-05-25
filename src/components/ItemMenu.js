@@ -1,14 +1,19 @@
 import React from 'react';
 import Item from './Item';
 
-const ItemMenu = () =>{
+
+const ItemMenu = ( listItem ) =>{
 
     return(
         <div className='menu'>
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+            {
+                listItem.map( item =>{
+                    const {name} = item
+                    return(
+                        <Item name={item.data.name}   />
+                    )
+                })
+            }
         </div>
     )
 }
