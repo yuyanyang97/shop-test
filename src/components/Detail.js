@@ -1,12 +1,25 @@
-import React, { Component } from 'react';
+import Cart from "./Cart"
 
-const Detail = () => {
-
+const Detail = ({listCart,deleteData}) => {
     return(
         <div>
-            Detail
+            <p>Detail</p>
+            {
+                listCart.map((cart) => {
+                    
+                    const {id,name, price} = cart;
+                    
+                    return (
+                        <Cart 
+                        id={id}
+                        name={name}
+                        price={price}
+                        deleteData={deleteData} />
+                    );
+                })
+            }
         </div>
-    )
+    );
 }
 
 export default Detail
