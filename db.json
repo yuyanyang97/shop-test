@@ -1,25 +1,43 @@
 {
-    "item" : [
-        {
-            "data": [
-                {
-                    "id":"",
-                    "name": "",
-                    "price":"",
-                    "stock":""
-                }
-            ]
-        }
-    ],
-    "cart":{
-        "data" :
-        [
-            {    
-                "id":"",
-                "name": "",
-                "price":"",
-                "stock":""
-            }
-        ]
+    "data":[
+    {
+        "id":"1",
+        "name": "hi1",
+        "price":"2.00",
+        "stock":"3"
+    },
+    {
+        "id":"1",
+        "name": "hi2",
+        "price":"3.00",
+        "stock":"3"
+    },
+    {
+        "id":"1",
+        "name": "hi3",
+        "price":"4.00",
+        "stock":"3"
     }
+],
+"data2":[
+    {
+        "id":"4",
+        "name": "hi",
+        "price":"1.00",
+        "stock":"3"
+    },
+    {
+        "id":"4",
+        "name": "hi",
+        "price":"1.00",
+        "stock":"3"
+    },
+    {
+        "id":"4",
+        "name": "hi",
+        "price":"1.00",
+        "stock":"3"
+    }
+]
+
 }

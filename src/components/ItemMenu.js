@@ -1,19 +1,16 @@
 import React from 'react';
 import Item from './Item';
 
-
-const ItemMenu = ( listItem ) =>{
-
+const ItemMenu = ({item, itemList}) =>{
+    console.log('from item menu',itemList)
     return(
         <div className='menu'>
-            {
-                listItem.map( item =>{
-                    const {name} = item
-                    return(
-                        <Item name={item.data.name}   />
-                    )
-                })
-            }
+        {
+            itemList.map((itemInMenu) => (
+                <Item addItem={item} updateItem={itemInMenu}/>
+            ))
+        }
+            
         </div>
     )
 }
