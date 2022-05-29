@@ -1,9 +1,9 @@
-const Cart = ({name,price,id, deleteData}) =>{
-    console.log('from cart',{name})
+const Cart = ({name, price, id, deleteData}) =>{
 
     function deleteCart(){
         deleteData(function(prev){
-            return prev.filter(cart => cart.id !== id)
+            console.log('from function', prev)
+            return this.prev.filter(cart => cart.id !== id)
         })
     }
     return(

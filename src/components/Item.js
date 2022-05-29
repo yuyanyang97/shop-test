@@ -1,15 +1,14 @@
-const Item = ({addItem, updateItem}) => {
+const Item = ({addItem, name, price, id}) => {
     function addToCart(){
         addItem((prev) => {
-            return [...prev,{updateItem}]
+            return [...prev, {name, price, id}]
         })
-        console.log('Form Item',(updateItem.id))
     }
     return(
         <div>
             <div className="item">
-                <p>{updateItem.name}</p>
-                <p>RM {updateItem.price}</p>
+                <p>{name}</p>
+                <p>RM {price}</p>
                 <button onClick={addToCart}>Add to Cart</button >
             </div>
         </div>

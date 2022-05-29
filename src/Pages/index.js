@@ -9,25 +9,25 @@ const Home = () => {
     const itemList = [{
         id: 1,
         name: "Bulls",
-        price: "1"
+        price: 1
       },
       {
         id: 2,
         name: "Suns",
-        price: "2"
+        price: 2
       },
       {
         id: 3,
         name: "Magic",
-        price: "3"
+        price: 3
       },
       {
         id: 4,
         name: "Magic",
-        price: "4"
+        price: 4
       }]
     const [item,setItem] = useState([])
-
+      
     return (
         <div className="app">
             <ItemMenu item={setItem} itemList={itemList}/>
